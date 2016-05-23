@@ -37,21 +37,21 @@ comfortable doing so.
 
 [10:06] 
 most of what you need will be in here:
-https://github.com/pma2020/jhu_charting/tree/master/app/views/layouts
+https://github.com/pma2020/jhu_charting_fork/tree/master/app/views/layouts
 
 [10:06] 
 for the headers/footers and general layout
 
 [10:07] 
 most of the other things you could find here:
-https://github.com/pma2020/jhu_charting/blob/master/app/views/datasets/show.html.erb
+https://github.com/pma2020/jhu_charting_fork/blob/master/app/views/datasets/show.html.erb
 
 [10:07] 
 for the embed button and title
 
 [10:08] 
 This is where the blank chart is drawn:
-https://github.com/pma2020/jhu_charting/blob/master/app/views/datasets/_chart.html.erb#L30
+https://github.com/pma2020/jhu_charting_fork/blob/master/app/views/datasets/_chart.html.erb#L30
 
 [10:08] 
 it is really just an icon loaded into a div tag so anything could be put there
@@ -59,7 +59,7 @@ really
 
 [10:09] 
 the subtitle is set here:
-https://github.com/pma2020/jhu_charting/blob/master/app/assets/javascripts/chart_helper.js#L676
+https://github.com/pma2020/jhu_charting_fork/blob/master/app/assets/javascripts/chart_helper.js#L676
 
 [10:10] 
 for this question: 6. How could we add a text description underneath the
@@ -73,11 +73,11 @@ or also when it is exported/printed?
 
 [10:11] 
 and the favicon is set here:
-https://github.com/pma2020/jhu_charting/blob/master/app/views/layouts/application.html.erb#L8
+https://github.com/pma2020/jhu_charting_fork/blob/master/app/views/layouts/application.html.erb#L8
 
 if that is the case you could just add the p tag containing whatever you would
 want under this section:
-https://github.com/pma2020/jhu_charting/blob/master/app/views/datasets/_chart.html.erb#L26
+https://github.com/pma2020/jhu_charting_fork/blob/master/app/views/datasets/_chart.html.erb#L26
 
 [10:12] 
 tag
