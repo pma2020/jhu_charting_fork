@@ -26,3 +26,90 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+==========
+
+
+jasontruluck [10:05 AM] 
+@jpringle: good morning, sorry I did not reply back to your email yet. There
+are a few there that I think you would be able to take a stab at if you feel
+comfortable doing so.
+
+[10:06] 
+most of what you need will be in here:
+https://github.com/pma2020/jhu_charting/tree/master/app/views/layouts
+
+[10:06] 
+for the headers/footers and general layout
+
+[10:07] 
+most of the other things you could find here:
+https://github.com/pma2020/jhu_charting/blob/master/app/views/datasets/show.html.erb
+
+[10:07] 
+for the embed button and title
+
+[10:08] 
+This is where the blank chart is drawn:
+https://github.com/pma2020/jhu_charting/blob/master/app/views/datasets/_chart.html.erb#L30
+
+[10:08] 
+it is really just an icon loaded into a div tag so anything could be put there
+really
+
+[10:09] 
+the subtitle is set here:
+https://github.com/pma2020/jhu_charting/blob/master/app/assets/javascripts/chart_helper.js#L676
+
+[10:10] 
+for this question: 6. How could we add a text description underneath the
+charting tool? We want to say something like "PMA2020 uses innovative mobile
+technology to support...". I think we could make a <p/> section and just add
+the text in if we knew where to do it.
+
+[10:10] 
+it just depends on whether you want it to just be there while using the website
+or also when it is exported/printed?
+
+[10:11] 
+and the favicon is set here:
+https://github.com/pma2020/jhu_charting/blob/master/app/views/layouts/application.html.erb#L8
+
+if that is the case you could just add the p tag containing whatever you would
+want under this section:
+https://github.com/pma2020/jhu_charting/blob/master/app/views/datasets/_chart.html.erb#L26
+
+[10:12] 
+tag
+
+[10:12] 
+That is what the chart is “rendered” into
+
+
+
+====================
+
+ruby does come installed on mac (2.0.0) I believe. This is not the version we
+are using but should be compatible enough to get up and running. You will also
+need postgresql installed to be able to use the database
+
+[10:31] 
+but once you have those two thing you should be able to clone the repository
+then run `bundle install` which will install all dependencies for the project
+
+[10:31] 
+then run `rake db:create`
+
+[10:31] 
+then  `rake db:migrate`
+
+[10:31] 
+which will setup the postgresql database
+
+[10:32] 
+then once everything is setup you can run `rails s`
+
+[10:32] 
+which will bring up the development server on `localhost:3000`
+
+
